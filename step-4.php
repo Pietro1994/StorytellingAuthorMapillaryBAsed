@@ -12,7 +12,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-    <title>Step 4</title>
+    <title>Step 4 </title>
 	</head>
 	<body>
 		<?php
