@@ -1,0 +1,73 @@
+    <!DOCTYPE html>
+     <html>
+      <head>
+       <meta charset="utf-8">
+       <meta name="viewport" content="width=device-width">
+       <title>Preview</title>
+       <script src="https://npmcdn.com/mapillary-js@1.0.1/dist/mapillary-js.min.js"></script>
+       <link rel="stylesheet" href="https://npmcdn.com/mapillary-js@1.0.1/dist/mapillary-js.min.css"/>
+       <style>
+         body { background-color: white; }
+         .mly-wrapper { margin: 0 auto; }
+
+         .mly-wrapper {
+           position: relative;
+           background-color: grey;
+           width: 640px;
+           height: 480px;
+         }
+         #mly, .mapillary-js {
+           position: relative;
+           height: 100%;
+           width: 100%;
+         }
+      </style>
+     </head>
+     <body>
+      <div class="mly-wrapper">
+       <div class="mly" id="mly-route"></div>
+      </div>
+      <br>
+      <center>
+       <button onclick="play()">Play</button><button onclick="stop()">Stop</button>
+      </center>
+     <script>
+var play = undefined;
+var stop = undefined;
+document.addEventListener("DOMContentLoaded", function(event) {
+  var mlyRoute = new Mapillary.Viewer('mly-route', 'QWJSSnU3YWRLRFlzc2Q2ZDJZMDc2dzplMjU5ZjIwN2QyMzliZDdh', '5ZHJNn9a87AAeQPTO7WdqA', {cover: true, cache: false, direction: false});
+  var route = mlyRoute.getComponent("route");
+  route.configure({paths: [
+{sequenceKey: "LWw4IRL83VGEdX58oZ5PZg", startKey: "5ZHJNn9a87AAeQPTO7WdqA", stopKey: "M3Np7uGL3-dcpDVM8BRzFw",
+  infoKeys: [
+     {key: "5ZHJNn9a87AAeQPTO7WdqA", description: ""},
+     {key: "M3Np7uGL3-dcpDVM8BRzFw", description: ""},
+            ]},{sequenceKey: "V6zRV5vsYgr1mJERKDXucw", startKey: "pbz_iIGU1Jg1Y_fZHizU6g", stopKey: "pbz_iIGU1Jg1Y_fZHizU6g",
+  infoKeys: [
+     {key: "pbz_iIGU1Jg1Y_fZHizU6g", description: ""},
+            ]},{sequenceKey: "F1C0TZKfWfEOoEw9uAbt4g", startKey: "u7BAgkbozWje81DJubPJeg", stopKey: "u7BAgkbozWje81DJubPJeg",
+  infoKeys: [
+     {key: "u7BAgkbozWje81DJubPJeg", description: ""},
+            ]},{sequenceKey: "4-116fYxvXpH7kzR6HtySw", startKey: "SIsGilfqAx1PoaLyaSyLYQ", stopKey: "SIsGilfqAx1PoaLyaSyLYQ",
+  infoKeys: [
+     {key: "SIsGilfqAx1PoaLyaSyLYQ", description: ""},
+            ]},{sequenceKey: "6SDOW0VY3aX2r7zOMp5W1A", startKey: "_fcVOQOZxmtrq1RMQgx94w", stopKey: "_fcVOQOZxmtrq1RMQgx94w",
+  infoKeys: [
+     {key: "_fcVOQOZxmtrq1RMQgx94w", description: ""},
+            ]},{sequenceKey: "WH4e-Sgu36DLAeAgf5X2dg", startKey: "nENU70uBTfKg90qbWbYIMw", stopKey: "nENU70uBTfKg90qbWbYIMw",
+  infoKeys: [
+     {key: "nENU70uBTfKg90qbWbYIMw", description: ""},
+            ]},{sequenceKey: "STZblecqmc_K8_WErTj8Fg", startKey: "sbzJjTb2TI8PO5BXUFpZag", stopKey: "sbzJjTb2TI8PO5BXUFpZag",
+  infoKeys: [
+     {key: "sbzJjTb2TI8PO5BXUFpZag", description: ""},
+            ]},{sequenceKey: "YWU4d0MsStgePXCcU-dm5Q", startKey: "qP_Cb1wH-E8CkXAPZAUiIw", stopKey: "qP_Cb1wH-E8CkXAPZAUiIw",  infoKeys: [     {key: "qP_Cb1wH-E8CkXAPZAUiIw", description: ""},            ]},], playing: true});
+mlyRoute.activateComponent("route");
+play = function play() {
+  mlyRoute.deactivateCover();
+  route.play();
+}
+stop = function stop() {
+  route.stop()
+}
+})
+</script></body></html>

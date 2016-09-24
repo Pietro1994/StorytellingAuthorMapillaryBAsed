@@ -1,0 +1,148 @@
+    <!DOCTYPE html>
+     <html>
+      <head>
+       <meta charset="utf-8">
+       <meta name="viewport" content="width=device-width">
+       <title>Preview</title>
+       <script src="https://npmcdn.com/mapillary-js@1.0.1/dist/mapillary-js.min.js"></script>
+       <link rel="stylesheet" href="https://npmcdn.com/mapillary-js@1.0.1/dist/mapillary-js.min.css"/>
+       <style>
+         body { background-color: white; }
+         .mly-wrapper { margin: 0 auto; }
+
+         .mly-wrapper {
+           position: relative;
+           background-color: grey;
+           width: 640px;
+           height: 480px;
+         }
+         #mly, .mapillary-js {
+           position: relative;
+           height: 100%;
+           width: 100%;
+         }
+      </style>
+     </head>
+     <body>
+      <div class="mly-wrapper">
+       <div class="mly" id="mly-route"></div>
+      </div>
+      <br>
+      <center>
+       <button onclick="play()">Play</button><button onclick="stop()">Stop</button>
+      </center>
+     <script>
+var play = undefined;
+var stop = undefined;
+document.addEventListener("DOMContentLoaded", function(event) {
+  var mlyRoute = new Mapillary.Viewer('mly-route','QWJSSnU3YWRLRFlzc2Q2ZDJZMDc2dzplMjU5ZjIwN2QyMzliZDdh','_sFbZ_hKvss1B_Rcbz5nkw', {cover: true, cache: false, direction: false});
+  var route = mlyRoute.getComponent("route");
+  route.configure({paths: [
+{sequenceKey: "iLtMP-PFRgHOek8kUBMvJw", startKey: "_sFbZ_hKvss1B_Rcbz5nkw", stopKey: "zxhXCEop2M6e2vegKYyK6A",
+  infoKeys: [
+     {key: "_sFbZ_hKvss1B_Rcbz5nkw", description: ""},
+     {key: "A_2BLshhrGKcxiYY_AHwFw", description: ""},
+     {key: "3Z_l-Pz6HlaqQAkK85MSBg", description: ""},
+     {key: "zxhXCEop2M6e2vegKYyK6A", description: ""},
+            ]},{sequenceKey: "DEGrK0ol_1uGWwfukJ6_ug", startKey: "C3wb2TaldDoKKVyxDiAlvw", stopKey: "6TAkyNhB8EHvS9w3OCN_7Q",
+  infoKeys: [
+     {key: "C3wb2TaldDoKKVyxDiAlvw", description: ""},
+     {key: "6TAkyNhB8EHvS9w3OCN_7Q", description: ""},
+            ]},{sequenceKey: "iLtMP-PFRgHOek8kUBMvJw", startKey: "bRj-LhDhImUAgA3AQy7vrg", stopKey: "bRj-LhDhImUAgA3AQy7vrg",
+  infoKeys: [
+     {key: "bRj-LhDhImUAgA3AQy7vrg", description: ""},
+            ]},{sequenceKey: "DEGrK0ol_1uGWwfukJ6_ug", startKey: "rltkVwJt21XJ5b5u_e28Mg", stopKey: "rltkVwJt21XJ5b5u_e28Mg",
+  infoKeys: [
+     {key: "rltkVwJt21XJ5b5u_e28Mg", description: ""},
+            ]},{sequenceKey: "iLtMP-PFRgHOek8kUBMvJw", startKey: "7XUKHL-mxUZn8lKkUelMoA", stopKey: "FV9QN39IS8JdIOSnVqfZhg",
+  infoKeys: [
+     {key: "7XUKHL-mxUZn8lKkUelMoA", description: ""},
+     {key: "FV9QN39IS8JdIOSnVqfZhg", description: ""},
+            ]},{sequenceKey: "DEGrK0ol_1uGWwfukJ6_ug", startKey: "_xG-rTcv3t2b4PWu2K3gqw", stopKey: "Cv_rBqfRMoA5UVgyBfx7Jw",
+  infoKeys: [
+     {key: "_xG-rTcv3t2b4PWu2K3gqw", description: ""},
+     {key: "uFkjILhNzbq2MvOJGM9LSw", description: ""},
+     {key: "uFkjILhNzbq2MvOJGM9LSw", description: ""},
+     {key: "kUqGr-YPHXjQVszLAFU-lQ", description: ""},
+     {key: "HsVuZ2BpGOegO_8fzc5jmw", description: ""},
+     {key: "EXoMWCbCSRQhFioLN_amiw", description: ""},
+     {key: "dtrSqBuBM_pPiF811Ycajg", description: ""},
+     {key: "KJxYarEERvB1BjnqllSp5Q", description: ""},
+     {key: "DdDki5K3v2gvR18BRkSi0A", description: ""},
+     {key: "YWlELp-1n94ZV7ljCwRS8g", description: ""},
+     {key: "YWlELp-1n94ZV7ljCwRS8g", description: ""},
+     {key: "YWlELp-1n94ZV7ljCwRS8g", description: ""},
+     {key: "YWlELp-1n94ZV7ljCwRS8g", description: ""},
+     {key: "4f_Kyk_41ndHBkEI90WFgg", description: ""},
+     {key: "VfVa4xzMEILK9gcrpuM1tQ", description: ""},
+     {key: "VfVa4xzMEILK9gcrpuM1tQ", description: ""},
+     {key: "irxq7OhrfAlRg10Pc1PD_A", description: ""},
+     {key: "sZ95bE0ZgmtVEpL_9v3JOg", description: ""},
+     {key: "9q5JiSpIwW-qxZgQFZNZAw", description: ""},
+     {key: "4KRkmlKbRdT0wi77hsY8DQ", description: ""},
+     {key: "7NixFpW8BlyerTzO5QS_fg", description: ""},
+     {key: "QtmnXBq9xT2Ynb5XXFzfhA", description: ""},
+     {key: "mItorv1AIWSlLxt8S0mMWA", description: ""},
+     {key: "kNcEEibMdf4A_Q8ViS3F-w", description: ""},
+     {key: "Ntbz_shZK4mEY4q-Gj-gDw", description: ""},
+     {key: "_00-4d-8t5J2MttgBfeeVQ", description: ""},
+     {key: "Cv_rBqfRMoA5UVgyBfx7Jw", description: ""},
+            ]},{sequenceKey: "q2GPRWGhcv59gLWVmCNtJA", startKey: "QaUQkRM3WzBT48cQLDgRpA", stopKey: "QaUQkRM3WzBT48cQLDgRpA",
+  infoKeys: [
+     {key: "QaUQkRM3WzBT48cQLDgRpA", description: ""},
+            ]},{sequenceKey: "DEGrK0ol_1uGWwfukJ6_ug", startKey: "DukHRhZzfGTBTM1-hiY-Gw", stopKey: "k88us8Rb-goNekwFM0KDWw",
+  infoKeys: [
+     {key: "DukHRhZzfGTBTM1-hiY-Gw", description: ""},
+     {key: "4OHS4BMib3GYEX27j_ms0w", description: ""},
+     {key: "k88us8Rb-goNekwFM0KDWw", description: ""},
+            ]},{sequenceKey: "q2GPRWGhcv59gLWVmCNtJA", startKey: "BkJiLwEfnNDif-icp30-2A", stopKey: "BkJiLwEfnNDif-icp30-2A",
+  infoKeys: [
+     {key: "BkJiLwEfnNDif-icp30-2A", description: ""},
+            ]},{sequenceKey: "EWlzHjBVua848oXQDahi_g", startKey: "R2zLx06b4DIqu5dpo2OJSw", stopKey: "R2zLx06b4DIqu5dpo2OJSw",
+  infoKeys: [
+     {key: "R2zLx06b4DIqu5dpo2OJSw", description: ""},
+            ]},{sequenceKey: "zEgOqAP7rdoq8kP52hd6gQ", startKey: "JZgyBgzgGmTNFcExfGm5pw", stopKey: "MZfOoak12sXiMmH2jJYALA",
+  infoKeys: [
+     {key: "JZgyBgzgGmTNFcExfGm5pw", description: ""},
+     {key: "9FfWQDSCZMYMDdFr3vdkYQ", description: ""},
+     {key: "PNqI-px6VhEnS5R0yjYIKw", description: ""},
+     {key: "nJi1JeV5X36Ng-EHwe8h4Q", description: ""},
+     {key: "hZcAZ6GKfL5qQ1aKy_H_FQ", description: ""},
+     {key: "AQiWd2HKNd7_SNNZlxe_7Q", description: ""},
+     {key: "92stagbowrat8POaMfq24w", description: ""},
+     {key: "ihJa-X6ItvnS_o14K1J4YA", description: ""},
+     {key: "OxbNqv2hh6nqJHSn3osmWg", description: ""},
+     {key: "OHpU8mJlZ3cvvAWnyYhlkA", description: ""},
+     {key: "_luh1A9Q984fm8_WOtvqQA", description: ""},
+     {key: "U7iCAFrMNEfRkkcXFnfXpA", description: ""},
+     {key: "yFOYjWM8zsi9BX92mlDZvA", description: ""},
+     {key: "fp4d2Jzc7O3KXwq2IXSS_w", description: ""},
+     {key: "8t_cVc5dpk_eI8hQOzN1Lw", description: ""},
+     {key: "Fqntob7Zbip54E7oTM-pIA", description: ""},
+     {key: "B2QKNNauzRIkIXz7pU7kMA", description: ""},
+     {key: "VQ_cnGYpmExLTwm0zjP1qQ", description: ""},
+     {key: "-v1Gyvrr20hJWFCI6dKJeQ", description: ""},
+     {key: "XBynqqHRbLB-dFarrGOcQQ", description: ""},
+     {key: "teU21HrwT_N1esomrA9LiQ", description: ""},
+     {key: "2bp7csE1KPJ-3q0h8xuruw", description: ""},
+     {key: "DWXqKextEUc4HanguJfjkg", description: ""},
+     {key: "NLW2VPlLX_QZprP8wa08Dw", description: ""},
+     {key: "FsAwcBqwiNd7LROPU1rUFg", description: ""},
+     {key: "cBlrID6egH4hTErl6RLmfw", description: ""},
+     {key: "TSOp_CmeS0URkDalrU-zGA", description: ""},
+     {key: "TSOp_CmeS0URkDalrU-zGA", description: ""},
+     {key: "mSlM_kpeGsVY4dmcVDsrdA", description: ""},
+     {key: "sDq9dkcvRykdxVXMDH5zuQ", description: ""},
+     {key: "IJGEKj6tajrQOQ8rZ75gBw", description: ""},
+     {key: "MZfOoak12sXiMmH2jJYALA", description: ""},
+            ]},{sequenceKey: "rG58sIE9CPUOAj3qjMSUyg", startKey: "d_7qi1TZLPNPDKiBOI0F2w", stopKey: "jo5T1spKXRdWq2FdOPJM2w",  infoKeys: [     {key: "d_7qi1TZLPNPDKiBOI0F2w", description: ""},     {key: "76eezgDV6fZjfjBrKDWGmA", description: ""},     {key: "AAewAwHf0yUt0_S37P8hew", description: ""},     {key: "7cdkgxVmCFYi6IgE5ECYKg", description: ""},     {key: "bqKxmesyAs54Znqc8yf2rg", description: ""},     {key: "jo5T1spKXRdWq2FdOPJM2w", description: ""},     {key: "jo5T1spKXRdWq2FdOPJM2w", description: ""},            ]},], playing: true});
+mlyRoute.activateComponent("route");
+play = function play() {
+  mlyRoute.deactivateCover();
+  route.play();
+}
+stop = function stop() {
+  route.stop()
+}
+})
+</script></body></html>

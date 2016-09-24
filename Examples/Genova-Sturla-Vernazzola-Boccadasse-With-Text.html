@@ -1,0 +1,81 @@
+    <!DOCTYPE html>
+     <html>
+      <head>
+       <meta charset="utf-8">
+       <meta name="viewport" content="width=device-width">
+       <title>Preview</title>
+       <script src="https://npmcdn.com/mapillary-js@1.0.1/dist/mapillary-js.min.js"></script>
+       <link rel="stylesheet" href="https://npmcdn.com/mapillary-js@1.0.1/dist/mapillary-js.min.css"/>
+       <style>
+         body { background-color: white; }
+         .mly-wrapper { margin: 0 auto; }
+
+         .mly-wrapper {
+           position: relative;
+           background-color: grey;
+           width: 640px;
+           height: 480px;
+         }
+         #mly, .mapillary-js {
+           position: relative;
+           height: 100%;
+           width: 100%;
+         }
+      </style>
+     </head>
+     <body>
+      <div class="mly-wrapper">
+       <div class="mly" id="mly-route"></div>
+      </div>
+      <br>
+      <center>
+       <button onclick="play()">Play</button><button onclick="stop()">Stop</button>
+      </center>
+     <script>
+var play = undefined;
+var stop = undefined;
+document.addEventListener("DOMContentLoaded", function(event) {
+  var mlyRoute = new Mapillary.Viewer('mly-route', 'QWJSSnU3YWRLRFlzc2Q2ZDJZMDc2dzplMjU5ZjIwN2QyMzliZDdh', 'E6ajPMG4kACV-EPHX_8GOQ', {cover: true, cache: false, direction: false});
+  var route = mlyRoute.getComponent("route");
+  route.configure({paths: [
+{sequenceKey: "c1xWiv7lTw09aiBJw3Kb-g", startKey: "E6ajPMG4kACV-EPHX_8GOQ", stopKey: "a7kGm8mxGWhMQDtI7Lrhcg",
+  infoKeys: [
+     {key: "E6ajPMG4kACV-EPHX_8GOQ", description: "Si parte da Sturla ..."},
+     {key: "PQlt2TWa1H7ykxxKHjh1lQ", description: ".. si sale .. "},
+     {key: "TkcDtHy6t3dAgwZSGhgNdA", description: ""},
+     {key: "l12nL1fExdvB9omNXj-N4A", description: ""},
+     {key: "3G_CHqdrsYv6GbQ3IfJWcg", description: ""},
+     {key: "yHEHr-BPpvjRWujQxrJgVQ", description: ""},
+     {key: "MFurZ6hbl_vAxq7K-_DL4Q", description: ""},
+     {key: "a7kGm8mxGWhMQDtI7Lrhcg", description: "... qui tenere la sinistra ... "},
+            ]},{sequenceKey: "E539qeMCr7OrDvrTQMrF-Q", startKey: "aoo1k1u9HagPQcy-pON02w", stopKey: "bV4H1P78gNdpKO5vN8-iuA",
+  infoKeys: [
+     {key: "aoo1k1u9HagPQcy-pON02w", description: "... si scende ... "},
+     {key: "HAE_ZfDV1Ycp5WxTEniqoA", description: ""},
+     {key: "jTA-ECPZPR1vXPmDGJ9tyQ", description: ""},
+     {key: "Db--Qh9akX6sDRph7B5v5Q", description: "... la spiaggia di Vernazzola ... "},
+     {key: "k3n9twZgYHCncxAxbSEchQ", description: ""},
+     {key: "k3n9twZgYHCncxAxbSEchQ", description: ""},
+     {key: "5DWPAkhPGExotkQT9LL0Sw", description: ""},
+     {key: "bV4H1P78gNdpKO5vN8-iuA", description: "... ora si risale ..."},
+            ]},{sequenceKey: "63BgeuSBU2NTOHjtn8Yp_A", startKey: "vmL5M9c9oiw3v_42E6TQeg", stopKey: "hJsXrFiytswgrZz3gC61Xw",
+  infoKeys: [
+     {key: "vmL5M9c9oiw3v_42E6TQeg", description: ""},
+     {key: "qH-mbSB4FWXZEsozIFFzNg", description: ""},
+     {key: "9oXtbGoYIpgKa3PFNeejLg", description: ""},
+     {key: "d3p69iDO1LKiy4HRBEQjUQ", description: ""},
+     {key: "6jVuJU4PuGLaqwcmBFV9iQ", description: ".... sempre più stretto .... "},
+     {key: "F6kh1UNMmW5IrndAmx8Q4g", description: ""},
+     {key: "e2HMZXYwya9XHczpAzy8pw", description: ""},
+     {key: "hJsXrFiytswgrZz3gC61Xw", description: " ... quando si sbuca girare a sinistra ... "},
+            ]},{sequenceKey: "OIpE3V7SQdkC5gXD3OCv4w", startKey: "Kh8bKrJ9FEjcgc3SX-E7ew", stopKey: "5uc7p8D5Hn5IZJ2xRvgpwA",  infoKeys: [     {key: "Kh8bKrJ9FEjcgc3SX-E7ew", description: ""},     {key: "sLxHSuksWgKAYgJyXMU3Mg", description: "... tra poco due belle ville a destra e sinistra ... "},     {key: "i-I0Sz_k_c9hXUS07MmF8g", description: ""},     {key: "q2-WHStXZY6mjP1VWyA09w", description: "... punto panoramico ... "},     {key: "j96oaX1REzcYcYrxT393pg", description: ""},     {key: "zRKx8OI0vBhHLDAAT_rB3A", description: ""},     {key: "xvE2GEenGoQuU4D6BDeo8A", description: ""},     {key: "BRJoIBQyTiWvUk5FcX7VIA", description: ""},     {key: "MeX8oYdMB5MoaRhW_YaknQ", description: ".. .ci siamo quasi ... "},     {key: "5uc7p8D5Hn5IZJ2xRvgpwA", description: "... sullo sfondo ... Boccadasse"},            ]},], playing: true});
+mlyRoute.activateComponent("route");
+play = function play() {
+  mlyRoute.deactivateCover();
+  route.play();
+}
+stop = function stop() {
+  route.stop()
+}
+})
+</script></body></html>
