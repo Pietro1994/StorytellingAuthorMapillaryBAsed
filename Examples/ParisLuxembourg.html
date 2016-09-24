@@ -35,10 +35,26 @@
 var play = undefined;
 var stop = undefined;
 document.addEventListener("DOMContentLoaded", function(event) {
-  var mlyRoute = new Mapillary.Viewer('mly-route', 'QWJSSnU3YWRLRFlzc2Q2ZDJZMDc2dzplMjU5ZjIwN2QyMzliZDdh, 'a0VxrP5CYseKOImAa2lXpA', {cover: true, cache: false, direction: false});
+  var mlyRoute = new Mapillary.Viewer('mly-route', 'QWJSSnU3YWRLRFlzc2Q2ZDJZMDc2dzplMjU5ZjIwN2QyMzliZDdh', 'a0VxrP5CYseKOImAa2lXpA', {cover: true, cache: false, direction: false});
   var route = mlyRoute.getComponent("route");
   route.configure({paths: [
-{sequenceKey: "ctjmDYf3kys-4l2t_R01ag", startKey: "a0VxrP5CYseKOImAa2lXpA", stopKey: "MuBBNzCcOnBHqtnMeucazg",  infoKeys: [     {key: "a0VxrP5CYseKOImAa2lXpA", description: ""},     {key: "JzpVlwmWfc4-z7-Td6JpVw", description: ""},     {key: "F-QXEiEp3gVjuuxkkhcTfg", description: ""},     {key: "S5A8Zs7EZgzzX_AGpWE--Q", description: ""},     {key: "aMNI77dcVSaRmyIHSV5ntA", description: ""},     {key: "aMNI77dcVSaRmyIHSV5ntA", description: ""},     {key: "aMNI77dcVSaRmyIHSV5ntA", description: ""},     {key: "aMNI77dcVSaRmyIHSV5ntA", description: ""},     {key: "ZpKcwkoK_OBj98GoDtybcQ", description: ""},     {key: "swRT1IEyo4XRtmhm96r82g", description: ""},     {key: "Lla7g8dbYWvilirzgJ4WuQ", description: ""},     {key: "_oj_AYBGxB3Afkli6pAnHQ", description: ""},     {key: "wpw6xH6YyABjeqJGRkPrqQ", description: ""},     {key: "MuBBNzCcOnBHqtnMeucazg", description: ""},            ]},], playing: true});
+{sequenceKey: "ctjmDYf3kys-4l2t_R01ag", startKey: "a0VxrP5CYseKOImAa2lXpA", stopKey: "MuBBNzCcOnBHqtnMeucazg",  
+  infoKeys: [     
+      {key: "a0VxrP5CYseKOImAa2lXpA", description: ""},     
+      {key: "JzpVlwmWfc4-z7-Td6JpVw", description: ""},     
+      {key: "F-QXEiEp3gVjuuxkkhcTfg", description: ""},     
+      {key: "S5A8Zs7EZgzzX_AGpWE--Q", description: ""},     
+      {key: "aMNI77dcVSaRmyIHSV5ntA", description: ""},     
+      {key: "aMNI77dcVSaRmyIHSV5ntA", description: ""},     
+      {key: "aMNI77dcVSaRmyIHSV5ntA", description: ""},     
+      {key: "aMNI77dcVSaRmyIHSV5ntA", description: ""},     
+      {key: "ZpKcwkoK_OBj98GoDtybcQ", description: ""},     
+      {key: "swRT1IEyo4XRtmhm96r82g", description: ""},     
+      {key: "Lla7g8dbYWvilirzgJ4WuQ", description: ""},     
+      {key: "_oj_AYBGxB3Afkli6pAnHQ", description: ""},     
+      {key: "wpw6xH6YyABjeqJGRkPrqQ", description: ""},     
+      {key: "MuBBNzCcOnBHqtnMeucazg", description: ""},            
+      ]},], playing: true});
 mlyRoute.activateComponent("route");
 play = function play() {
   mlyRoute.deactivateCover();
