@@ -24,7 +24,7 @@ I vincoli per l’utilizzo sono i seguenti:
 
 Esistono problemi noti, che sono:
 
-* il servizio di routing di MapBox ha un piccolo bug per cui, a volte, non riporta nel percorso l’ultimo punto (destinazione). Ho cercato di aprire una richiesta su StackExchange,  ma ad oggi non ho ancora avuto risposte, nemmeno da MapBox stessa. Il bug non è comunque bloccante anche se fastidioso
+* il servizio di routing di MapBox ha un piccolo bug per cui, a volte, non riporta nel percorso l’ultimo punto (destinazione). Ho cercato di aprire una richiesta su [StackExchange] (http://gis.stackexchange.com/questions/209012/mapbox-directions-with-more-than-2-waypoints-bug-or-my-error),  ma ad oggi non ho ancora avuto risposte, nemmeno da MapBox stessa. Il bug non è comunque bloccante anche se fastidioso
 
 Ecco alcuni esempi di storytelling prodotti con SAMBA:
 
