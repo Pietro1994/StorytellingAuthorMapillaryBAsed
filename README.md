@@ -37,7 +37,7 @@ Ecco alcuni esempi di storytelling prodotti con SAMBA:
 ## Architettura
 Schematicamente l’architettura della soluzione è la seguente:
 
-![alt tag](https://cesaregerbino.files.wordpress.com/2016/09/samba-arch.png)
+![alt tag](https://cesaregerbino.files.wordpress.com/2016/09/architecture.png)
 
 Per implementare le sue funzionalità utilizza una serie di librerie Javascript e di alcuni servizi e precisamente:
 
